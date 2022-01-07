@@ -286,6 +286,9 @@ form{
     
 
 }
+form{
+maxlength: 10px;
+}
 
 
 
