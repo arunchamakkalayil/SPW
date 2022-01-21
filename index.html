@@ -25,6 +25,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
@@ -40,7 +41,7 @@
 
     <div class="header-hero-wrapper">
       <!---image-->
-      <img
+      <img 
         src="images/bg-tablet-pattern.svg"
         alt="pattern"
         class="pattern-image-one"
@@ -53,12 +54,22 @@
           <div class="logo">
             <img src="images/logo.svg" alt="logo" class="logo-image" />
           </div>
-          <div class="links">
-            <a href="#">Pricing</a>
-            <a href="#">Product</a>
-            <a href="#">About Us</a>
-            <a href="#">Careers</a>
-            <a href="#">Community</a>
+          <div class="links" id="myTopnav">
+            <input type="checkbox" id="click">
+            <label for="click" class="icon">
+              <i class="fa fa-bars"></i>
+            </label>
+            <ul>  
+               <li><a href="#">Pricing</a></li> 
+              <li> <a href="#">Product</a></li> 
+              <li> <a href="#">About Us</a></li> 
+              <li> <a href="#">Careers</a></li> 
+              <li><a href="#">Community</a></li>  
+             
+            
+              </ul>
+           
+        
           </div>
           <div class="get-started">
             <a href="#" class="main-button">Get Started</a>
@@ -296,7 +307,7 @@
           <div class="col-xm-6 col-sm-6 col-md-3">
             <div class="inbox footer-inbox">
               <form>
-                <input type="text" placeholder="Updates in your inbox">
+                <input type="text" size="17" placeholder="Updates in your inbox">
                 <a href="#" class="main-button">Go</a>
               </form>
              

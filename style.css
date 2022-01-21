@@ -266,6 +266,10 @@ form{
     text-align: center;
   
 }
+div ul{
+    display: flex;
+    list-style: none;
+}
 .credits-wrapper{
    
     color: #fff;
@@ -286,6 +290,15 @@ form{
     
 
 }
+.icon i{
+    color:black;
+    font-size: 20px;
+    cursor: pointer;
+}
+#click{
+    display: none;
+}
+
 
 
 
@@ -294,10 +307,10 @@ form{
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
+   
     .footer .small-image{
         display: block;
     }
-
     .footer .logo-image{
         display: none;
     }
@@ -312,12 +325,19 @@ form{
     }
     .footer-logo-image{
         display: block;
-      margin: 0 auto;
+       
+        margin: 0 auto;
     }
     .credits-wrapper-2{
         display: block;
     }
-  
+    .header .get-started{
+        display: none;
+    }
+    .icon{
+        display:block;
+    }
+   
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -346,6 +366,13 @@ form{
     .credits-wrapper-2{
         display: block;
     }
+    .header .get-started{
+        display: none;
+    }
+    .icon{
+        display:block;
+    }
+ 
 
 
 }
@@ -355,6 +382,7 @@ form{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
 
     .footer .small-image{
         display: none;
@@ -378,8 +406,16 @@ form{
     .credits-wrapper-2{
         display: none;
     }
+    .header .get-started{
+        display: none;
+    }
+    .icon{
+        display:block;
+    }
+  
  
 }
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -406,6 +442,13 @@ form{
     .credits-wrapper-2{
         display: none;
     }
+    .header .get-started{
+        display: block;
+    }
+    .icon{
+        display: none;
+    }
+    
 
 }
 
@@ -435,5 +478,46 @@ form{
     .credits-wrapper-2{
         display: none;
     }
+    .header .get-started{
+        display: block;
+    }
+    .icon{
+        display: none;
+    }
+    
   
+}
+
+@media (max-width:992px){
+
+    #click:checked ~ label i:before {
+        content: "\f00d";
+    }
+
+    .links ul{
+        position: absolute;
+       
+        text-align: center;
+        left: -100%;
+    
+      
+        
+        background: #fff;
+        height: 50vh;
+        top: 80px;
+        width: 100%;
+    
+       
+        display: block;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.4s ease;
+    }
+    .links ul li{
+        margin: 25px 0;
+    }
+    #click:checked ~ ul {
+    left: 0%;
+    }
+   
 }
