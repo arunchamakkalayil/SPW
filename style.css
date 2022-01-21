@@ -290,6 +290,7 @@ div ul{
     
 
 }
+<<<<<<< HEAD
 .icon i{
     color:black;
     font-size: 20px;
@@ -299,6 +300,11 @@ div ul{
     display: none;
 }
 
+=======
+form{
+maxlength: 10px;
+}
+>>>>>>> 6648c71f34ca2d20e72c9b1cb20527b423ae3c2d
 
 
 
