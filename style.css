@@ -503,25 +503,41 @@ div ul{
        
         text-align: center;
         left: -100%;
+       
+        
     
       
         
         background: #fff;
-        height: 50vh;
+        height: 75vh;
         top: 80px;
+        padding: 50px 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
         width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
        
-        display: block;
+        
         justify-content: center;
         align-items: center;
-        transition: all 0.4s ease;
+    
+        display: none;
     }
     .links ul li{
-        margin: 25px 0;
+        margin: 45px 0;
+        padding-right:15px;
+        justify-content: center;
+        align-items: center;
     }
     #click:checked ~ ul {
-    left: 0%;
+        left: 0%;
+       
+   
+    display: block;
+    
+   
     }
    
 }
